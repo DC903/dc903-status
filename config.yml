@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: DC903 Defcoin
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: http://defcoin.dc903.org
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,12 +143,10 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
-    - name: Uncategorized
-      untitled: true
+    - name: defcoin.dc903.org
+      description: The DC903 Defcoin pool
+    - name: explorer.dc903.org
+      description: The DC903 Defcoin block explorer
 
   # These are your systems. Change them to
   # change the amount of components.
@@ -158,16 +156,18 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    - name: defcoind - 1337
+      description: defcoind node
+      category: defcoin.dc903.org
+    - name: p2pool - 13372
+      description: Mining pool
+      category: defcoin.dc903.org
+    - name: Web UI
+      description: Web UI showing stats of pool, miners, recent blocks, and more
+      category: defcoin.dc903.org
+    - name: Web UI
+      description: Web UI serving a Defcoin block explorer
+      category: explorer.dc903.org
 
   # What date format to use?
   #
@@ -229,7 +229,7 @@ params:
   #
   # Default: `true`
   # BOOLEAN; `true`, `false`
-  useLargeHeaderDesign: false
+  useLargeHeaderDesign: true
 
   # Should incident history be separated
   # like in an archive view?
@@ -282,13 +282,13 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: logo.png
+  logo: dc903_defcoin_logo.jpeg
 
   # This is the description that is shown
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: DC903 Defcoin server status page
 
   # Tabs on homepage
   # Uncomment to enable.

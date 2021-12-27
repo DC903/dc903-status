@@ -2,7 +2,7 @@ title: DC903 Defcoin Service Status
 buildFuture: true
 defaultContentLanguage: en
 languageCode: en
-baseURL: http://defcoin.dc903.org
+baseURL: https://dc903.netlify.app
 theme: cstate
 preserveTaxonomyNames: true
 taxonomies:
